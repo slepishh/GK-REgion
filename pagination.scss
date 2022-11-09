@@ -1,0 +1,167 @@
+
+ .pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px;
+    margin-bottom: 80px;
+  
+    .next {
+      padding: 0;
+  
+      a {
+        background-color: transparent;
+        color: $black;
+  
+        &::after {
+          content: url("/img/svg/pugination-arrow.svg");
+          
+          position: absolute;
+          top: 11px;
+          right: 0;
+        }
+  
+        &:hover {
+          background-color: transparent;
+          color: #212121;
+          opacity: 0.6;
+          box-shadow: none;
+          &::after{
+            content:  url("/img/svg/pugination-arrow-hover.svg");
+            transform: rotate(180deg);
+            top:10px
+          }
+        }
+      }
+    }
+  
+    .prev {
+      padding: 0;
+  
+      a {
+        background-color: transparent;
+        color: $black;
+  
+        &::after {
+          content: url("/img/svg/pugination-arrow.svg");
+          transform: rotate(180deg);
+          position: absolute;
+          left: 0;
+          top: 10px;
+        }
+  
+        &:hover {
+          background-color: transparent;
+          color: #212121;
+          opacity: 0.6;
+          box-shadow: none;
+          &::after{
+            content:  url("/img/svg/pugination-arrow-hover.svg");
+            transform: rotate(0);
+            top: 11px;
+          }
+        }
+      }
+    }
+  
+    li {
+      display: inline-block;
+      font-family: $montserrat;
+      font-weight: 700;
+      margin: 0 11px;
+      user-select: none;
+      font-size: 18px;
+      line-height: 1;
+      list-style-type: none;
+      a, span {
+        color: $gray;
+        font-size: 18px;
+        line-height: 1;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        padding: 10px 15px;
+        border-radius: 4px;
+        border: 1px solid transparent;
+      }
+  
+      &.active span {
+        font-weight: 700;
+        margin: 0 11px;
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+        
+        background-color: transparent;
+        border: 2px solid #799E3E;
+        border-radius: 50%;
+        &:hover {
+            opacity: 1;
+        }
+      }
+  
+      a:hover,
+      span:hover {
+       border-radius: 50%;
+       background-color: #799E3E ;
+       color: $white;
+      }
+  
+      &.active {
+        position: relative;
+  
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+  
+      &.prev a,
+      &.next a {
+        font-weight: 500;
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: auto;
+        padding-left: 20px;
+        &:hover {
+         border: 1px solid transparent;
+        }
+        @media #{$md} {
+         display: none;
+        }
+      }
+  
+      &.next a {
+        padding-left: 0;
+        padding-right: 20px;
+      }
+  
+      &.first {
+        margin-right: 0;
+        white-space: nowrap;
+  
+        &:after {
+          content: "...";
+          font-size: 20px;
+          margin-left: 5px;
+        }
+      }
+  
+      &.last {
+        margin-left: 0;
+        white-space: nowrap;
+  
+        &:before {
+          content: "...";
+          font-size: 20px;
+         // нужна переменная font-family: $font_bold;
+          margin-right: 5px;
+        }
+      }
+  
+    }
+  }

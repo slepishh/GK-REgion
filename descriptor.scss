@@ -1,0 +1,243 @@
+.descriptor{
+    margin-top: 35px;
+    &__text-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__text-block{
+        width: 470px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: $gray;
+    }
+    &__text-block-sales{
+        width: 453px;
+    }
+    &__text-block p:not(:last-child){
+        margin-bottom: 10px;
+    }
+    &__gallery{
+        height: 545px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center
+    }
+    &__text-logo{
+        font-weight: 400;
+        font-size: 60px;
+        margin-top: 10px;
+        
+    }
+    &__text-logo-about{
+        font-size: 20px;
+        line-height: 100%;
+        text-transform: uppercase;
+        span{
+            font-family: 'Arno-Pro';
+            font-weight: 400;
+            font-size: 90px;
+            line-height: 100%;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            display: block;
+        }
+    }
+    &__text-block-about{
+        font-family: 'Arno-Pro';
+        width: 450px;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 110%;
+    }
+    &__head-sales{
+        font-size: 32px;
+        line-height: 120%;
+        font-family: 'Arno-Pro';
+        width: 593px;
+    }
+    &__title{
+        font-family: 'Arno Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 100%;
+    }
+    &__family{
+        background-image: url(../img/catalog/family-descriptor-bg.jpg);
+        margin-top: 80px;
+    }
+    &__contacts{
+        background-image: url(../img/catalog/descriptor-contacts.jpg);
+        margin-top: 55px;
+    }
+    &__sales{ 
+        background-image: url(../img/catalog/sales-description.jpg);
+        margin-top: 55px;
+    }
+    &__news{
+        background-image: url(../img/catalog/descriptor-news.jpg);
+        margin-top: 55px;
+    }
+    &__head-projects{
+        font-family: 'Arno Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 100%;
+    }
+    &__projects{
+        background-image: url(../img/catalog/descriptor-projects.jpg);
+        margin-top: 55px;
+    }
+    &__wrapper{
+       width: 100%;
+       height: 58vh;
+       position: relative;
+       display: flex;
+       &-title{
+        font-family: 'Arno-Pro';
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 55px;
+        letter-spacing: 0.02em;
+        margin-bottom: 35px;
+       }
+       &-items{
+        
+        .item-phone{
+            background-image: url(../img/svg/phone-icone.svg);
+        }
+        .item-adress{
+            background-image: url(../img/svg/adress-icone.svg);
+        }
+        .item-mail{
+            background-image: url(../img/svg/mail-icone.svg);
+        }
+
+       }
+       &-item{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 13px;
+        padding-left: 36px;
+        position: relative;
+        background-repeat: no-repeat;
+
+       }
+    }
+    &__sales-title{
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 110%;
+        margin-bottom: 14px;
+        margin-top: 48px;
+        font-family: 'Arno-Pro';
+    }
+    &__project{
+        background-image: url(../img/catalog/descriptor-project.jpg);
+        margin-top: 50px;
+    }
+    &__project-title{
+        font-family: 'Arno-Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+    }
+    &__project-link{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 8px 10px 8px 35px;
+        border-radius: 20px;
+        background-color: #EEEEEE;
+        margin-top: 5px;
+        position: relative;
+        display: inline-block;
+        &::before{
+            content: url(../img/svg/cursor.svg);
+            position: absolute;
+            top:50%;
+            left: 14px;
+            transform: translateY(-50%);
+            width: 14px;
+            height: 16px;
+        }
+    }
+    &__wrapper-left{
+        color: $white ;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    &__wrapper-right{
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        color: $white ;
+        
+    }
+    &__wrapper-name{
+        font-size: 18px;
+        line-height: 110%;
+        margin-top: 45px;
+    }
+    &__wrapper-post{
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 10px;
+    }
+    &__about{
+        background-image: url(../img/catalog/descriptor-about.jpg);
+        margin-top: 100px;
+        height: 67vh;
+        .descriptor__wrapper {
+            height: 67vh;
+        }
+        .descriptor__gallery-head {
+            font-family: 'Arno Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 43px;
+            line-height: 55px;
+            letter-spacing: 0.02em;
+            color: $white;
+            margin-bottom: 15px;
+
+        }
+        .descriptor__wrapper-left1{
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+        }
+        .descriptor__wrapper-right1{
+            color: $white ;
+            position: absolute;
+            top: 50%;
+            right: -50px;
+            transform: translateY(-50%);
+            width: 510px;
+        }
+        .descriptor__gallery-desc{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 170%;
+            margin-bottom: 36px;
+        }
+        .descriptor__gallery-desc_name{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 110%;
+            margin-bottom: 14px;
+        }
+        .descriptor__gallery-desc_post{
+            font-size: 16px;
+            line-height: 110%;
+        }
+    }
+}
