@@ -1,0 +1,13 @@
+block variables
+    - var title = 'Страница не найдена'
+    - var page = 'error'
+    
+doctype html
+html(lang='ru')
+    head 
+        include html/static/head
+    body.body 
+        include html/static/burger
+        include html/static/header
+        include html/pages/404
+        include html/static/footer

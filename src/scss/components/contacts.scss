@@ -1,0 +1,175 @@
+.descriptor{
+    &__wrapper-left{
+        @media #{$esm}{
+            display: none;
+        }
+
+    }
+    &__wrapper-right{
+        
+        @media #{$esm}{
+            width: 307px;
+            height: 307px;
+            border-radius: 50%;
+            background-image: url(../img/catalog/sales-person-mobile-br.png);
+            background-position: left;
+            background-size:cover;
+            position: relative;
+            &::before{
+                content:"";
+                width: 331px;
+                height: 331px;
+                background-image: url(../img/svg/ellipse.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &::after{
+                content:"";
+                width: 426px;
+                height: 389px;
+                background-image: url(../img/catalog/sales-person-mobile.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                bottom: 0;
+                left: 50.5%;
+                transform: translateX(-50%);
+                object-fit: contain;
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+    &__wrapper{
+        @media #{$esm}{
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__wrapper-mobile{
+        display: none;
+        text-align: center;
+        margin-bottom: 35px;
+        .descriptor__wrapper-item{
+            padding: 0;
+        }
+        @media #{$esm}{
+            display: block;
+        }
+    }
+}
+.sales{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        @media #{$sm}{
+            flex-direction: column-reverse;
+        }
+    }
+    &__map-wrapper{
+        width: 1000px;
+        height: 636px;
+        margin-left: 50px;
+        position: relative;
+        @media #{$lg}{
+            width: 50%;
+            margin-left: 0;
+        }
+        @media #{$sm}{
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+    &__map{
+        width: 1000px;
+        height: 636px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @media #{$sm}{
+            width: 100%;
+        }
+    }
+    &__callback{
+        @media #{$lg}{
+            width: 45%;
+        }
+        @media #{$sm}{
+            width: 100%;
+        }
+        .callback__form{
+            @media #{$lg}{
+                width: 100%;
+            }
+            @media #{$sm}{
+                width: 100%;
+                padding: 40px 0;
+                text-align: center;
+            }
+            .form_block--inputs{
+                @media #{$sm}{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 15px;
+                }
+                @media #{$esm}{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            
+            
+            .btn{
+                @media #{$esm}{
+                    width: 100%;
+
+                }
+
+            }
+        }
+        .contacts__subtitle{
+            @media #{$esm}{
+                display: none;
+            }
+        }
+    }
+}
+#map{
+    .ymaps-2-1-79-events-pane{
+        filter: grayscale(1) !important;
+        -ms-filter: grayscale(1) !important;
+        -webkit-filter: grayscale(1) !important;
+        -moz-filter: grayscale(1) !important;
+        -o-filter: grayscale(1) !important;
+    }
+    
+}
+.main-contacts{
+    .descriptor__wrapper{
+        @media #{$sm}{
+            height: 545px;
+            
+        }
+    }
+    .descriptor__wrapper-left{
+        @media #{$sm}{
+            justify-content: center;
+        }
+    }
+    .descriptor__wrapper-title{
+        @media #{$esm}{
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 130%;
+            margin-top: 40px;
+        }
+    }
+}

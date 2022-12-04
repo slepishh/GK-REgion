@@ -1,0 +1,340 @@
+.advantages{
+    margin-top: 85px;
+    @media #{$esm}{
+        margin-top: 45px;
+    }
+    &__relative{
+        position: relative;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        @media #{$sm}{
+            flex-direction: column;
+            align-items: center;
+        }
+       
+
+    }
+    .advantages__left{
+        width: 665px;
+        @media #{$sm}{
+            width: 100%;
+        }
+    }
+    &__title{
+        font-family: 'Arno-Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 55px;
+        letter-spacing: 0.02em;
+        color: $gray;
+        margin-bottom: 30px;
+        background-repeat: no-repeat;
+        @media #{$esm}{
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 115%;
+            text-align: center;
+        }
+    }
+    &__items{
+        margin-top: 30px;
+    }
+    &__item-title{
+        padding:17px 0 17px 63px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 170%;
+        margin-bottom: 7px;
+        text-transform: uppercase;
+        position: relative;
+        @media #{$sm}{
+            font-size: 18px;
+            line-height: 170%;
+        }
+        @media #{$esm}{
+            font-size: 16px;
+            line-height: 170%;
+        }
+    }
+    
+    &__item-desc{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        margin-bottom: 25px;
+    }
+    
+    .advantages__right{
+        width: 350px;
+        position: relative;
+        
+        @media #{$sm}{
+            margin-top: 80px;
+            padding-bottom: 66px;
+        }
+    }
+    &__document-link{
+        position: relative;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &::before{
+            content:"";
+            background-color: #fff7007a;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 463px;
+            height: 463px;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 50px 2px #fff7007a;
+            filter: blur(150px);
+            z-index: 50;
+        }
+        p {
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 150%;
+            text-align: center;
+            width: 340px;
+            margin-top: 10px;
+            color: $gray;
+            position: relative;
+            z-index: 55;
+        }
+        
+    }
+    &__document{
+        position: relative;
+        z-index: 60;
+        @media #{$md}{
+            margin-top: 100px;
+        }
+        @media #{$esm}{
+            width: 80%;
+        }
+        
+    }
+    &__document-keys{
+        width: 449px;
+        height: 322px;
+        position: relative;
+        @media #{$sm}{
+            display: none;
+        }
+    }
+}
+.main-about{
+    .descriptor{
+        &__wrapper{
+            @media #{$lg}{
+                height: 420px;
+            }
+            @media #{$sm}{
+                height: 379px;
+            }
+        }
+        &__wrapper-left1{
+            @media #{$lg}{
+                width: 389px;
+                bottom: 0;
+            }
+            img{
+                @media #{$lg}{
+                    position: absolute;
+                    bottom: 0;
+                    left: -35px;
+                }
+                
+            }
+            @media #{$sm}{
+                width: 332px;
+            }
+        }
+        &__wrapper-right1{
+            @media #{$sm}{
+                width: 56%;
+                right: 0;
+            }
+        }
+        &__about{
+            @media #{$lg}{
+                height: 420px;
+            }
+            @media #{$esm}{
+                height: 350px;
+            }
+            & .descriptor__wrapper{
+                @media #{$esm}{
+                    height: 350px;
+                }
+            }
+        }
+        &__gallery-head{
+            @media #{$lg}{
+                font-size: 38px;
+                line-height: 120%;
+                text-align: left;
+                margin-top: 0px;
+                font-family: 'ArnoPro';
+                margin-bottom: 9px;
+            }
+
+            @media #{$sm}{
+                font-size: 32px;
+                line-height: 115%;
+                text-align: left;
+                margin-top: 0px;
+                font-family: 'ArnoPro';
+            }
+            @media #{$esm}{
+                text-align: center;
+            }
+            
+        }
+        &__gallery-desc{
+            @media #{$lg}{
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 30px;
+                
+            }
+            
+            @media #{$sm}{
+                font-size: 14px;
+                line-height: 160%;
+                margin-bottom: 20px;
+            }
+            @media #{$esm}{
+                font-size: 16px;
+                line-height: 160%;
+                margin-bottom: 20px;
+            }
+            
+        }
+        &__gallery-desc_name{
+            @media #{$lg}{
+                
+                margin-bottom: 14px;
+            }
+            @media #{$sm}{
+                font-size: 20px;
+                line-height: 110%;
+                margin-bottom: 6px;
+            }
+            @media #{$esm}{
+                font-size: 18px;
+                line-height: 110%;
+                margin-bottom: 6px;
+            }
+
+        }
+        &__gallery-desc_post{
+            @media #{$sm}{
+                font-size: 16px;
+                line-height: 110%;
+            }
+
+        }
+        &__text-content{
+            @media #{$sm}{
+                text-align: center;
+                align-items: center;
+            }
+            
+        }
+        &__text-block-about {
+            @media #{$md}{
+                width: 100%;
+            }
+            @media #{$sm}{
+                width: 100%;
+                text-align: center;
+                font-size: 28px;
+                line-height: 120%;
+            }
+            @media #{$esm}{
+                font-size: 32px;
+                line-height: 115%;
+                color: $green;
+            }
+        }
+        &__text-logo-about{
+            @media #{$sm}{
+                font-size: 16px;
+                line-height: 100%;
+            }
+            span{
+                @media #{$sm}{
+                    margin-top: 13px;
+                    font-size: 60px;
+                    line-height: 100%;
+                }
+            }
+        }
+        &__gallery{
+            @media #{$sm}{
+                height: 379px;
+            }
+            @media #{$esm}{
+                background-image: none !important;
+                margin-top: 30px;
+            }
+        }
+        &__wrapper-right1{
+            @media #{$sm}{
+                text-align: left;
+            }
+            @media #{$esm}{
+                display: none;
+            }
+            
+        }
+        &__wrapper-left1{
+            @media #{$esm}{
+                width: 307px;
+                height: 307px;
+                border-radius: 50%;
+                background-image: url(../img/catalog/sales-person-mobile-br.png);
+                background-position: left;
+                background-size:cover;
+                position: relative;
+                &::before{
+                    content:"";
+                    width: 331px;
+                    height: 331px;
+                    background-image: url(../img/svg/ellipse.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                &::after{
+                    content:"";
+                    width: 307px;
+                    height: 337px;
+                    background-image: url(../img/catalog/about-person-mobile.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    object-fit: contain;
+                }
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+}

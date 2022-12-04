@@ -1,0 +1,17 @@
+block variables
+    - var title = 'Контакты'
+    - var page = 'contacts'
+    
+doctype html
+html(lang='ru')
+    head 
+        include html/static/head
+    body.body 
+        include html/static/burger
+        include html/static/header
+        include html/pages/contacts
+        <script src="https://api-maps.yandex.ru/2.1.45/?lang=ru_RU" type="text/javascript"></script>
+        script
+            include js/onpage/map.js
+        include html/static/footer
+        

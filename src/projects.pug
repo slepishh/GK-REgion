@@ -1,0 +1,16 @@
+block variables
+    - var title = 'Список объектов'
+    - var page = 'projects'
+    
+doctype html
+html(lang='ru')
+    head 
+        include html/static/head
+    body.body 
+        include html/static/burger
+        include html/static/header
+        include html/pages/projects
+        include html/static/footer
+        script
+            include js/onpage/info-slider.js
+        

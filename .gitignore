@@ -1,0 +1,9 @@
+*.log
+system/storage/cache/*
+system/storage/session/*
+sess_*
+image/cache/*
+.idea
+.idea/*
+figma
+node_modules
