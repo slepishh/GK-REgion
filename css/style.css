@@ -5359,7 +5359,7 @@ form {
 
 .swiper-button-prev {
   left: 0px;
-  background-image: url(../img/svg/articles-left-arrow.svg);
+  background-image: url(img/svg/articles-left-arrow.svg);
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -5367,7 +5367,7 @@ form {
 
 .swiper-button-next {
   right: 0;
-  background-image: url(../img/svg/articles-left-arrow.svg);
+  background-image: url(img/svg/articles-left-arrow.svg);
 }
 
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
@@ -6500,7 +6500,7 @@ form.sent > .response p {
   left: 1%;
   z-index: 100;
   border: none;
-  background-image: url(../img/svg/Arrow-gallery.svg);
+  background-image: url(img/svg/Arrow-gallery.svg);
 }
 @media screen and (max-width: 1300px) {
   .descriptor__index .swiper-button-prev, .descriptor__project .swiper-button-prev {
@@ -6510,7 +6510,7 @@ form.sent > .response p {
 }
 @media screen and (max-width: 768px) {
   .descriptor__index .swiper-button-prev, .descriptor__project .swiper-button-prev {
-    background-image: url(../img/svg/arrows-mobile-slider.svg);
+    background-image: url(img/svg/arrows-mobile-slider.svg);
     width: 32px;
     height: 32px;
     left: 2%;
@@ -6528,7 +6528,7 @@ form.sent > .response p {
   right: 5%;
   z-index: 140;
   border: none;
-  background-image: url(../img/svg/Arrow-gallery.svg);
+  background-image: url(img/svg/Arrow-gallery.svg);
 }
 @media screen and (max-width: 1300px) {
   .descriptor__index .swiper-button-next, .descriptor__project .swiper-button-next {
@@ -6542,7 +6542,7 @@ form.sent > .response p {
 }
 @media screen and (max-width: 768px) {
   .descriptor__index .swiper-button-next, .descriptor__project .swiper-button-next {
-    background-image: url(../img/svg/arrows-mobile-slider.svg);
+    background-image: url(img/svg/arrows-mobile-slider.svg);
     width: 32px;
     height: 32px;
     opacity: 0.8;
@@ -6962,7 +6962,7 @@ form.sent > .response p {
 
 .index-about {
   height: 570px;
-  background-image: url(../img/index/bk.jpg);
+  background-image: url(img/index/bk.jpg);
   background-repeat: no-repeat;
   background-position: left;
   right: -457px;
@@ -7014,7 +7014,7 @@ form.sent > .response p {
   right: -590px;
   width: 919px;
   height: 570px;
-  background-image: url(../img/index/image-about.png);
+  background-image: url(img/index/image-about.png);
 }
 @media screen and (max-width: 768px) {
   .index-about__wrapper::after {
@@ -7137,7 +7137,7 @@ form.sent > .response p {
   }
 }
 .index-about__content a::after {
-  content: url(../img/svg/right-arrow.svg);
+  content: url(img/svg/right-arrow.svg);
   position: absolute;
   top: 3%;
   right: 0;
@@ -7387,7 +7387,7 @@ form.sent > .response p {
   position: relative;
   margin: 37px 0 0;
   padding: 5px 0 10px 110px;
-  background-image: url(../img/svg/quotes.svg);
+  background-image: url(img/svg/quotes.svg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 60px 45px;
@@ -7908,7 +7908,7 @@ form.sent > .response p {
   }
 }
 .descriptor__wrapper-items .item-phone {
-  background-image: url(../img/svg/phone-icone.svg);
+  background-image: url(img/svg/phone-icone.svg);
 }
 @media screen and (max-width: 576px) {
   .descriptor__wrapper-items .item-phone {
@@ -7919,7 +7919,7 @@ form.sent > .response p {
   }
 }
 .descriptor__wrapper-items .item-adress {
-  background-image: url(../img/svg/adress-icone.svg);
+  background-image: url(img/svg/adress-icone.svg);
 }
 @media screen and (max-width: 576px) {
   .descriptor__wrapper-items .item-adress {
@@ -7930,7 +7930,7 @@ form.sent > .response p {
   }
 }
 .descriptor__wrapper-items .item-mail {
-  background-image: url(../img/svg/mail-icone.svg);
+  background-image: url(img/svg/mail-icone.svg);
 }
 @media screen and (max-width: 576px) {
   .descriptor__wrapper-items .item-mail {
@@ -8088,7 +8088,7 @@ form.sent > .response p {
   }
 }
 .descriptor__project-link::before {
-  content: url(../img/svg/cursor.svg);
+  content: url(img/svg/cursor.svg);
   position: absolute;
   top: 50%;
   left: 14px;
@@ -8716,7 +8716,7 @@ form.sent > .response p {
   }
 }
 .item-text .item1::before {
-  content: url(../img/svg/house.svg);
+  content: url(img/svg/house.svg);
   top: 50%;
   left: 0;
   width: 26px;
@@ -8727,7 +8727,7 @@ form.sent > .response p {
           transform: translateY(-50%);
 }
 .item-text .item2::before {
-  content: url(../img/svg/keys.svg);
+  content: url(img/svg/keys.svg);
   top: 50%;
   left: 0;
   width: 26px;
@@ -8741,7 +8741,7 @@ form.sent > .response p {
   margin-right: 0;
 }
 .item-text .item3::before {
-  content: url(../img/svg/date.svg);
+  content: url(img/svg/date.svg);
   top: 50%;
   left: 0;
   width: 26px;
@@ -9355,7 +9355,7 @@ form.sent > .response p {
   -o-transition: none;
   transition: none;
   opacity: 0.7;
-  background-image: url(../img/svg/prev-w.svg);
+  background-image: url(img/svg/prev-w.svg);
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
@@ -9397,7 +9397,7 @@ form.sent > .response p {
   bottom: auto;
   background-color: rgba(163, 162, 162, 0.5019607843);
   opacity: 0.7;
-  background-image: url(../img/svg/next-w.svg);
+  background-image: url(img/svg/next-w.svg);
   background-size: 30%;
   -webkit-transform: none;
       -ms-transform: none;
@@ -9454,7 +9454,7 @@ form.sent > .response p {
   position: absolute;
   width: 32px;
   height: 32px;
-  background-image: url(../img/svg/zoom.svg);
+  background-image: url(img/svg/zoom.svg);
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -9482,7 +9482,7 @@ form.sent > .response p {
   top: 10px;
   width: 28px;
   height: 28px;
-  background-image: url(../img/svg/close-light.svg);
+  background-image: url(img/svg/close-light.svg);
   background-size: cover;
   background-color: transparent;
   z-index: 1000;
@@ -9575,7 +9575,7 @@ form.sent > .response p {
   }
 }
 .page .quote::before {
-  content: url(../img/svg/qoute.svg);
+  content: url(img/svg/qoute.svg);
   position: absolute;
   top: 0px;
   left: 0;
@@ -9736,7 +9736,7 @@ form.sent > .response p {
   left: 0;
   width: 14px;
   height: 16px;
-  background-image: url(../img/svg/cursor.svg);
+  background-image: url(img/svg/cursor.svg);
   background-color: transparent;
 }
 .family__item-text {
@@ -9897,7 +9897,7 @@ form.sent > .response p {
     width: 307px;
     height: 307px;
     border-radius: 50%;
-    background-image: url(../img/catalog/sales-person-mobile-br.png);
+    background-image: url(img/catalog/sales-person-mobile-br.png);
     background-position: left;
     background-size: cover;
     position: relative;
@@ -9906,7 +9906,7 @@ form.sent > .response p {
     content: "";
     width: 331px;
     height: 331px;
-    background-image: url(../img/svg/ellipse.svg);
+    background-image: url(img/svg/ellipse.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -9921,7 +9921,7 @@ form.sent > .response p {
     content: "";
     width: 426px;
     height: 389px;
-    background-image: url(../img/catalog/sales-person-mobile.png);
+    background-image: url(img/catalog/sales-person-mobile.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -10164,7 +10164,7 @@ form.sent > .response p {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../img/svg/phone-icone-black.svg);
+  background-image: url(img/svg/phone-icone-black.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -10191,7 +10191,7 @@ form.sent > .response p {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../img/svg/adress-icone-black.svg);
+  background-image: url(img/svg/adress-icone-black.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -10219,7 +10219,7 @@ form.sent > .response p {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../img/svg/mail-icone-black.svg);
+  background-image: url(img/svg/mail-icone-black.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11201,7 +11201,7 @@ form.sent > .response p {
     width: 307px;
     height: 307px;
     border-radius: 50%;
-    background-image: url(../img/catalog/sales-person-mobile-br.png);
+    background-image: url(img/catalog/sales-person-mobile-br.png);
     background-position: left;
     background-size: cover;
     position: relative;
@@ -11210,7 +11210,7 @@ form.sent > .response p {
     content: "";
     width: 331px;
     height: 331px;
-    background-image: url(../img/svg/ellipse.svg);
+    background-image: url(img/svg/ellipse.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -11225,7 +11225,7 @@ form.sent > .response p {
     content: "";
     width: 307px;
     height: 337px;
-    background-image: url(../img/catalog/about-person-mobile.png);
+    background-image: url(img/catalog/about-person-mobile.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -11969,7 +11969,7 @@ form .fw-placeholder .error-placeholder {
 }
 .checkbox:checked + label:after {
   background-color: #799E3E;
-  background-image: url("../img/svg/check.svg");
+  background-image: url("img/svg/check.svg");
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 90% 90%;
@@ -12200,7 +12200,7 @@ form .wrong,
 
 .error-page {
   padding: 110px 0;
-  background: url(../img/404.jpg) center no-repeat;
+  background: url(img/404.jpg) center no-repeat;
   background-size: cover;
   height: 100%;
   -webkit-box-flex: 1;
@@ -12678,7 +12678,7 @@ form .wrong,
   display: none;
 }
 .footer__yandex-reviews::before {
-  content: url(../img/svg/Yandex_znak.svg);
+  content: url(img/svg/Yandex_znak.svg);
   width: 30px;
   height: 30px;
   position: absolute;
@@ -12715,7 +12715,7 @@ form .wrong,
   left: 0;
   width: 20px;
   height: 12px;
-  background-image: url(../img/svg/RBand-triangle.svg);
+  background-image: url(img/svg/RBand-triangle.svg);
   background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
@@ -12754,7 +12754,7 @@ form .wrong,
 }
 .footer-about .footer__wrapper::after {
   content: "";
-  background-image: url(../img/catalog/about-keys.png);
+  background-image: url(img/catalog/about-keys.png);
   background-size: cover;
   -webkit-transform: rotate(10.57deg);
       -ms-transform: rotate(10.57deg);
@@ -12978,7 +12978,7 @@ form .wrong,
   padding-left: 13px;
 }
 .burger .menu__wrapper .item2::before {
-  content: url(../img/svg/burger-home.svg);
+  content: url(img/svg/burger-home.svg);
   position: absolute;
   top: -11px;
   left: 0;
@@ -13028,7 +13028,7 @@ form .wrong,
   background: #ffffff;
 }
 .burger .menu__content::after {
-  content: url(../img/catalog/branch.png);
+  content: url(img/catalog/branch.png);
   position: absolute;
   bottom: 210px;
   right: -215px;
@@ -13075,11 +13075,11 @@ form .wrong,
   color: #000;
 }
 .burger .menu__content .slinky-menu.slinky-theme-default .next::after {
-  background: url(../img/svg/arrow-r.svg) center no-repeat;
+  background: url(img/svg/arrow-r.svg) center no-repeat;
   opacity: 1;
 }
 .burger .menu__content .slinky-menu.slinky-theme-default .back-icon {
-  background: url(../img/svg/arrow-l.svg) center no-repeat;
+  background: url(img/svg/arrow-l.svg) center no-repeat;
   opacity: 1;
 }
 .burger .menu__footer {
