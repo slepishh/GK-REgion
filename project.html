@@ -18,34 +18,28 @@
 <body class="body">
   <div class="burger">
     <div class="burger__burger-wrapper">
-      <div class="burger__burger js-menuBurger">
+      <div class="burger__burger js-menuBurger" id="menu">
         <span class="burger__burger-button"> </span>
         <span class="burger__burger-button"> </span>
         <span class="burger__burger-button"> </span>
         <span class="transform__text">Меню</span>
       </div>
       <div class="menu__wrapper js-menuWrap">
-        <div class="js-menu slinky-menu slinky-theme-default">
+        <div class="js-menu slinky-menu slinky-theme-default menu__content">
+          <div class="menu__header">
+            <a href="index.html">
+              <img class="header__mobile-logo" src="../img/svg/main-logo.svg" alt="">
+            </a>
+            <a class="header__mobile-phone" href="tel: +74832303009">
+              <img src="../img/svg/mobile-phone.svg">
+            </a>
+          </div>
           <ul class="menu__links">
             <li class="menu__item item1">
-              <a class="menu__link" href="">Главная</a>
+              <a class="menu__link" href="index.html">Главная</a>
             </li>
-            <li class="menu__item item2 menu__link--catalog">
+            <li class="menu__item item2">
               <a class="menu__link" href="projects.html">Наши объекты</a>
-              <ul class="menu__links">
-                <li>
-                  <a href="">Для ИП</a>
-                </li>
-                <li>
-                  <a href="">Для ООО</a>
-                </li>
-                <li>
-                  <a href="">Для самозанятых</a>
-                </li>
-                <li>
-                  <a href="">Для физических лиц</a>
-                </li>
-              </ul>
             </li>
             <li class="menu__item item3">
               <a class="menu__link" href="family.html">Семья ГК «Регион»</a>
@@ -63,13 +57,13 @@
               <a class="menu__link" href="contacts.html">Контакты</a>
             </li>
           </ul>
-        </div>
-        <div class="menu__footer">
-          <a class="menu__footer-phone" href="tel: +74832303009">
-            <img src="img/svg/menu-phone.svg" alt="">
-            <span>+7 (4832) 30-30-09</span>
-          </a>
-          <a class="menu__footer-callback btn load--callback" href="">Отдел продаж</a>
+          <div class="menu__footer">
+            <a class="menu__footer-phone" href="tel: +74832303009">
+              <img src="../img/svg/menu-phone.svg" alt="">
+              <span>+7 (4832) 30-30-09</span>
+            </a>
+            <a class="menu__footer-callback btn" href="sales.html">Отдел продаж</a>
+          </div>
         </div>
       </div>
     </div>
@@ -77,9 +71,11 @@
   <header class="header">
     <div class="container">
       <nav class="header__nav">
-        <img class="header__mobile-logo" src="img/svg/main-logo.svg" alt="">
+        <a class="header__mobile-logotype" href="index.html">
+          <img class="header__mobile-logo" src="../img/svg/main-logo.svg" alt="">
+        </a>
         <a class="header__mobile-phone" href="tel: +74832303009">
-          <img src="img/svg/mobile-phone.svg">
+          <img src="../img/svg/mobile-phone.svg">
         </a>
         <ul class="header__links">
           <li class="header__link header__link-item-1">
@@ -119,27 +115,30 @@
         </div>
       </div>
       <div class="descriptor__gallery descriptor__project">
-        <div class="container relative"></div>
-        <div class="slider-arrows">
-          <div class="swiper-button-prev swiper-button-prev-articles"> </div>
-          <div class="swiper-button-next swiper-button-next-articles"> </div>
+        <div class="container relative">
+          <div class="swiper-pagination-information"></div>
         </div>
-        <div class="partners__slider swiper js-articlesSlider">
-          <div class="partners__list swiper-wrapper js-articlesSlider">
-            <div class="partner__item swiper-slide">
-              <img src="img/catalog/descriptor-project.jpg" alt="Ассоциация «Брянское объединение строителей»">
-            </div>
-            <div class="partner__item swiper-slide">
-              <img src="img/catalog/descriptor-project.jpg" alt="«Национальное объединение строителей»">
-            </div>
-            <div class="partner__item swiper-slide">
-              <img src="img/catalog/descriptor-project.jpg" alt="Агрохолдинг «Охотно»">
-            </div>
-          </div>
+        <div class="slider-arrows">
+          <div class="swiper-button-prev swiper-button-prev-information"> </div>
+          <div class="swiper-button-next swiper-button-next-information"> </div>
+        </div>
+        <div class="information__slider swiper js-infoSlider">
+          <ul class="partner__item-list swiper-wrapper">
+            <li class="partner__item swiper-slide">
+              <img src="../img/catalog/descriptor-project.jpg" alt="">
+            </li>
+            <li class="partner__item swiper-slide">
+              <img src="../img/catalog/descriptor-project.jpg" alt="">
+            </li>
+            <li class="partner__item swiper-slide">
+              <img src="../img/catalog/descriptor-project.jpg" alt="">
+            </li>
+          </ul>
         </div>
       </div>
     </section>
     <section class="project">
+      <img class="branch" src="img/index/branch-projects.png" alt="">
       <div class="container">
         <div class="project__wrapper">
           <div class="project__desc">
@@ -161,15 +160,15 @@
           </div>
           <div class="project__list">
             <ul class="project__list-items">
-              <li class="project__list-item item1" style="background-image: url(img/svg/advantages-icon1.svg); background-repeat: no-repeat; background-position: left center; background-size: 66px">современная система «умный дом»</li>
-              <li class="project__list-item item2" style="background-image: url(img/svg/advantages-icon2.svg); background-repeat: no-repeat; background-position: left center; background-size: 66px">индивидуальное отопление </li>
-              <li class="project__list-item item3" style="background-image: url(img/svg/advantages-icon3.svg); background-repeat: no-repeat; background-position: left center; background-size: 71px">дом из кирпича</li>
+              <li class="project__list-item item1 wow fadeInUp" data-wow-duration="1s" style="background-image: url(../img/svg/advantages-icon1.svg); background-repeat: no-repeat; background-position: left center; background-size: 66px">современная система «умный дом»</li>
+              <li class="project__list-item item2 wow fadeInUp" data-wow-duration="1.5s" style="background-image: url(../img/svg/advantages-icon2.svg); background-repeat: no-repeat; background-position: left center; background-size: 66px">индивидуальное отопление </li>
+              <li class="project__list-item item3 wow fadeInUp" data-wow-duration="2s" style="background-image: url(../img/svg/advantages-icon3.svg); background-repeat: no-repeat; background-position: left center; background-size: 71px">дом из кирпича</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <section class="articles">
+    <section class="articles wow fadeInUp" data-wow-duration="1s">
       <div class="container">
         <h3 class="section-title section-title--arrows">Важные детали
           <div class="slider-arrows">
@@ -180,34 +179,34 @@
         <div class="articles__slider swiper js-articlesSlider1">
           <ul class="articles__list swiper-wrapper">
             <li class="articles__item swiper-slide">
-              <a class="articles__block" href="article.html">
+              <div class="articles__block">
                 <div class="articles__img">
-                  <img src="img/catalog/projects-gallery1.jpg" alt="Новость">
+                  <img src="../img/catalog/projects-gallery1.jpg" alt="Новость">
                 </div>
                 <div class="articles__description">
                   <h6 class="articles__title">Просторные проходы в подъезде</h6>
                 </div>
-              </a>
+              </div>
             </li>
             <li class="articles__item swiper-slide">
-              <a class="articles__block" href="article.html">
+              <div class="articles__block">
                 <div class="articles__img">
-                  <img src="img/catalog/projects-gallery2.jpg" alt="Новость">
+                  <img src="../img/catalog/projects-gallery2.jpg" alt="Новость">
                 </div>
                 <div class="articles__description">
                   <h6 class="articles__title">Детская площадка с безопасным покрытием</h6>
                 </div>
-              </a>
+              </div>
             </li>
             <li class="articles__item swiper-slide">
-              <a class="articles__block" href="article.html">
+              <div class="articles__block">
                 <div class="articles__img">
-                  <img src="img/catalog/projects-gallery3.jpg" alt="Новость">
+                  <img src="../img/catalog/projects-gallery3.jpg" alt="Новость">
                 </div>
                 <div class="articles__description">
                   <h6 class="articles__title">Большая огороженная парковка только для жителей дома</h6>
                 </div>
-              </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -246,7 +245,7 @@
       size: "large",
       position: {
         right: 20,
-        top: 100
+        top: 200
       }
     }
   });
@@ -259,7 +258,7 @@
       loop: true,
       draggable: true,
       autoplay: {
-        delay: 10000,
+        delay: 3000,
       },
       navigation: {
         nextEl: '.swiper-button-next-articles',
@@ -279,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
       allowTouchMove: true,
       draggable: true,
       autoplay: {
-        delay: 10000,
+        delay: 3000,
       },
       navigation: {
         nextEl: '.swiper-button-next-articles',
@@ -287,28 +286,122 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });  
 }); 
+
+
 document.addEventListener('DOMContentLoaded', () => {
-  
+  const mediaQueryLG = window.matchMedia('(min-width: 992px)');
+  const mediaQueryMD = window.matchMedia('(max-width: 991px)');
+  const mediaQuerySM = window.matchMedia('(max-width: 768px)');
   const swiperPartners = new Swiper('.js-articlesSlider1', {
     direction: 'horizontal',
-    slidesPerView: '3',
+    slidesPerView: 'auto',
     loop: true,
-    spaceBetween: 24,
+    spaceBetween: 9,
     draggable: true,
     autoplay: {
-      delay: 10000,
+      delay: 3000,
     },
     navigation: {
       nextEl: '.swiper-button-next-articles',
       prevEl: '.swiper-button-prev-articles',
+    },
+    breakpoints: {
+      768: {
+        spaceBetween: 21,
+      }
     }
   });
+});
+      document.addEventListener('DOMContentLoaded', () => {
+    const swiperInfoNav = new Swiper('.js-infoSliderNav', {
+        direction: 'horizontal',
+        slidesPerView: '3',
+        spaceBetween: 17,
+        loop: true, 
+    });
+    const swiperInfo = new Swiper('.js-infoSlider', {
+        direction: 'horizontal',
+        slidesPerView: '1',
+        loop: true,
+        draggable: true,
+        navigation: {
+          nextEl: '.swiper-button-next-information',
+          prevEl: '.swiper-button-prev-information',
+        },
+        //thumbs: {
+          //swiper: swiperInfoNav,
+        //},
+        pagination: {
+          el: '.swiper-pagination-information',
+          dynamicMainBullets: 3,
+          type: 'bullets',
+          clickable: true,
+        },
+        breakpoints: {
+          992: {
+            effect: 'fade',
+            slidesPerView: '1',
+            fadeEffect: {
+              crossFade: true
+            },
+          }
+        }
+    });
+  });
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const swiperProductNav = new Swiper('.js-productSliderNav', {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        grid: {
+          rows: 2,
+        },
+        breakpoints: {
+          1200: { 
+            slidesPerView: '4',
+            spaceBetween: 26,
+            loop: true,
+            draggable: true,
+            grid: {
+              rows: 1,
+            },
+          },
+        }
+    });
+    const swiperProduct = new Swiper('.js-productSlider', {
+        direction: 'horizontal',
+        slidesPerView: '3',
+        centeredSlides: true,
+        spaceBetween: 20,
+        loop: true,
+        draggable: true,
+        navigation: {
+          nextEl: '.swiper-button-next-product',
+          prevEl: '.swiper-button-prev-product',
+        },
+        pagination: {
+          el: '.swiper-pagination-product ',
+          type: 'bullets',
+          clickable: true,
+        },
+        thumbs: {
+          swiper: swiperProductNav ,
+        },
+        breakpoints: {
+          992: {
+            spaceBetween: 0,
+            loop: true,
+            centeredSlides: false,
+          }
+        }
+    });
 });
     </script>
   <footer class="footer footer-project">
     <div class="container">
       <div class="footer__wrapper">
-        <img src="img/svg/footer-logo.svg" alt="">
+        <img src="../img/svg/footer-logo.svg" alt="">
         <div class="footer__contacts">
           <div class="footer__contact">
             <h6 class="footer__title">центральный офис</h6>
@@ -339,9 +432,11 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div class="footer__copyright">
           <a class="footer__yandex-reviews">Яндекс отзывы о нас</a>
-          <a class="policy">Политика обработки персональных данных</a>
+          <a class="policy load--privacy">Политика обработки персональных данных</a>
           <p class="copyright">Все права защищены 2014 - 2022 © ГК «Регион»</p>
-          <img class="footer__rband" src="img/svg/Rband.svg" alt="">
+          <a class="rband" href="">
+            <img class="footer__rband" src="img/svg/Rband.svg" alt="">
+          </a>
         </div>
       </div>
     </div>

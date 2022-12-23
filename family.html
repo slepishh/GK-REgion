@@ -18,34 +18,28 @@
 <body class="body">
   <div class="burger">
     <div class="burger__burger-wrapper">
-      <div class="burger__burger js-menuBurger">
+      <div class="burger__burger js-menuBurger" id="menu">
         <span class="burger__burger-button"> </span>
         <span class="burger__burger-button"> </span>
         <span class="burger__burger-button"> </span>
         <span class="transform__text">Меню</span>
       </div>
       <div class="menu__wrapper js-menuWrap">
-        <div class="js-menu slinky-menu slinky-theme-default">
+        <div class="js-menu slinky-menu slinky-theme-default menu__content">
+          <div class="menu__header">
+            <a href="index.html">
+              <img class="header__mobile-logo" src="../img/svg/main-logo.svg" alt="">
+            </a>
+            <a class="header__mobile-phone" href="tel: +74832303009">
+              <img src="../img/svg/mobile-phone.svg">
+            </a>
+          </div>
           <ul class="menu__links">
             <li class="menu__item item1">
-              <a class="menu__link" href="">Главная</a>
+              <a class="menu__link" href="index.html">Главная</a>
             </li>
-            <li class="menu__item item2 menu__link--catalog">
+            <li class="menu__item item2">
               <a class="menu__link" href="projects.html">Наши объекты</a>
-              <ul class="menu__links">
-                <li>
-                  <a href="">Для ИП</a>
-                </li>
-                <li>
-                  <a href="">Для ООО</a>
-                </li>
-                <li>
-                  <a href="">Для самозанятых</a>
-                </li>
-                <li>
-                  <a href="">Для физических лиц</a>
-                </li>
-              </ul>
             </li>
             <li class="menu__item item3">
               <a class="menu__link" href="family.html">Семья ГК «Регион»</a>
@@ -63,13 +57,13 @@
               <a class="menu__link" href="contacts.html">Контакты</a>
             </li>
           </ul>
-        </div>
-        <div class="menu__footer">
-          <a class="menu__footer-phone" href="tel: +74832303009">
-            <img src="img/svg/menu-phone.svg" alt="">
-            <span>+7 (4832) 30-30-09</span>
-          </a>
-          <a class="menu__footer-callback btn load--callback" href="">Отдел продаж</a>
+          <div class="menu__footer">
+            <a class="menu__footer-phone" href="tel: +74832303009">
+              <img src="../img/svg/menu-phone.svg" alt="">
+              <span>+7 (4832) 30-30-09</span>
+            </a>
+            <a class="menu__footer-callback btn" href="sales.html">Отдел продаж</a>
+          </div>
         </div>
       </div>
     </div>
@@ -77,9 +71,11 @@
   <header class="header">
     <div class="container">
       <nav class="header__nav">
-        <img class="header__mobile-logo" src="img/svg/main-logo.svg" alt="">
+        <a class="header__mobile-logotype" href="index.html">
+          <img class="header__mobile-logo" src="../img/svg/main-logo.svg" alt="">
+        </a>
         <a class="header__mobile-phone" href="tel: +74832303009">
-          <img src="img/svg/mobile-phone.svg">
+          <img src="../img/svg/mobile-phone.svg">
         </a>
         <ul class="header__links">
           <li class="header__link header__link-item-1">
@@ -103,26 +99,27 @@
   </header>
   <main class="main main-family">
     <section class="descriptor">
+      <img class="branch" src="img/index/branch-banks.png" alt="">
       <div class="descriptor__text">
         <div class="container">
           <div class="descriptor__text-content">
-            <div class="descriptor__text-adress">
-              <h1>Семья ГК Регион</h1>
+            <div class="descriptor__title-block">
+              <h1 class="descriptor__title">Семья ГК Регион</h1>
             </div>
             <div class="descriptor__text-block">
-              <p>Семья ГК «Регион» – это девелоперская компания полного цикла. Мы работаем в связке с друг с другом и создаем проекты, которыми можем гордиться. </p>
+              <p>Семья ГК «Регион» – это девелоперская компания полного цикла. В совместной работе мы создаем проекты, которыми гордимся. </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="descriptor__gallery descriptor__family" style="background-image: url(img/catalog/family-descriptor-bg.jpg);"></div>
+      <div class="descriptor__gallery descriptor__family" style="background-image: url(../img/catalog/family-descriptor-bg.jpg);"></div>
     </section>
     <section class="family">
       <div class="container">
         <div class="family__items">
           <div class="family__item">
             <div class="family__item-text">
-              <img class="family__item-logo" src="img/svg/family_item1.svg" alt="">
+              <img class="family__item-logo" src="../img/svg/family_item1.svg" alt="">
               <h3 class="family__item-title">Брянское жилищное бюро</h3>
               <h4 class="family__item-subtitle">Агентство аренды и продажи недвижимости</h4>
               <p class="family__item-desc">Компания ООО «БЖБ» с 2015 года осуществляет функции отдела продаж брянского застройщика ООО «Регион». На протяжении уже многих лет мы реализуем на эксклюзивных правах всю недвижимость нашего партнера во всех его проектах ЖК «Идиллия», ЖК «Идиллия Лайф» и ЖК «Самолет».</p>
@@ -134,11 +131,11 @@
               </div>
               <a class="link" href="">бжб.рф</a>
             </div>
-            <div class="family__item-img img1" style="background-image: url(img/catalog/family1.jpg)"></div>
+            <div class="family__item-img img1" style="background-image: url(../img/catalog/family1.jpg)"></div>
           </div>
           <div class="family__item">
             <div class="family__item-text">
-              <img class="family__item-logo" src="img/svg/family_item2.svg" alt="">
+              <img class="family__item-logo" src="../img/svg/family_item2.svg" alt="">
               <h3 class="family__item-title">Электросервис</h3>
               <h4 class="family__item-subtitle">Электромонтажные работы</h4>
               <p class="family__item-desc">Предприятие ООО "Электросервис" занимается осуществлением электромонтажных работ производственных объектов, общественных и жилых зданий. Компания выполненяет работы с соблюдением всех временных и договорных условий. На все выполненные работы компания несет гарантийные обязательства и строго их соблюдает.</p>
@@ -150,7 +147,7 @@
               </div>
               <a class="link" href="">electro-32.ru</a>
             </div>
-            <div class="family__item-img img2" style="background-image: url(img/catalog/family2.jpg)"></div>
+            <div class="family__item-img img2" style="background-image: url(../../img/catalog/family2.jpg)"></div>
           </div>
           <div class="family__item">
             <div class="family__item-text">
@@ -165,7 +162,7 @@
                 <p>Брянск, ул. Красноармейская 100, оф. 426</p>
               </div>
             </div>
-            <div class="family__item-img img3" style="background-image: url(img/catalog/family3.jpg)"></div>
+            <div class="family__item-img img3" style="background-image: url(../../img/catalog/family3.jpg)"></div>
           </div>
           <div class="family__item">
             <div class="family__item-text">
@@ -180,7 +177,7 @@
                 <p>Брянск, ул. Молодой Гвардии, д. 4</p>
               </div>
             </div>
-            <div class="family__item-img img4" style="background-image: url(img/catalog/family4.jpg)"></div>
+            <div class="family__item-img img4" style="background-image: url(../../img/catalog/family4.jpg)"></div>
           </div>
         </div>
       </div>
@@ -189,7 +186,7 @@
   <footer class="footer footer-family">
     <div class="container">
       <div class="footer__wrapper">
-        <img src="img/svg/footer-logo.svg" alt="">
+        <img src="../img/svg/footer-logo.svg" alt="">
         <div class="footer__contacts">
           <div class="footer__contact">
             <h6 class="footer__title">центральный офис</h6>
@@ -220,9 +217,11 @@
         </div>
         <div class="footer__copyright">
           <a class="footer__yandex-reviews">Яндекс отзывы о нас</a>
-          <a class="policy">Политика обработки персональных данных</a>
+          <a class="policy load--privacy">Политика обработки персональных данных</a>
           <p class="copyright">Все права защищены 2014 - 2022 © ГК «Регион»</p>
-          <img class="footer__rband" src="img/svg/Rband.svg" alt="">
+          <a class="rband" href="">
+            <img class="footer__rband" src="img/svg/Rband.svg" alt="">
+          </a>
         </div>
       </div>
     </div>

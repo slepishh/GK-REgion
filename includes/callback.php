@@ -29,7 +29,7 @@
 
   <div class="response">
     <div>
-      <img src="/img/svg/response-image.svg" alt="" class="response__image">
+      <img src="/img/svg/form-logo-response.svg" alt="" class="response__image">
       <h4 class="h24">Ваша заявка отправлена,</h4>
       <p>мы свяжемся с вами в течении дня.</p>
     </div>
