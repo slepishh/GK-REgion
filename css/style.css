@@ -12999,13 +12999,13 @@ form .wrong,
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 66px;
-  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  
   width: 100%;
   padding: 0 70px 0 15px;
 }
 .burger .menu__header .header__mobile-phone {
   margin-top: 5px;
+  display: none;
 }
 .burger .menu__content {
   top: 0px;
